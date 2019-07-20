@@ -1,6 +1,6 @@
 def fibs(num, arr=[0,1])
     return [0] if num == 0
-    return [0,1] if num == 1
+    return arr if num == 1
     2.upto(num) { |n| arr[n] = arr[-2] + arr[-1] }
     arr
 end
