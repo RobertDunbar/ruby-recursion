@@ -1,9 +1,8 @@
-def fibs(num)
+def fibs(num, arr=[0,1])
     return [0] if num == 0
     return [0,1] if num == 1
-    array = [0,1]
-    2.upto(num) { |n| array[n] = array[-2] + array[-1] }
-    return array
+    2.upto(num) { |n| arr[n] = arr[-2] + arr[-1] }
+    arr
 end
 
 def fibs_rec(num, arr=[0,1])
